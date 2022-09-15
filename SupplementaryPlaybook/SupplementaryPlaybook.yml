@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  tasks:
+   - name: Doing Supplementary about Playbook
+     debug:
+       msg: Creating a Playbook
+
+   - name: Ping my hosts
+     ping:
+    
+   - name: Is it Done?
+     debug:
+       msg: Supplementary about Playbook is done.
